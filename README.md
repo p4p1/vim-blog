@@ -1,11 +1,7 @@
 # vim-blog
 A simple vim pluggin for working on my blog.
 
-![new post name](https://raw.githubusercontent.com/p4p1/vim-blog/master/assets/new-post-name.png)
-
-![new post desc](https://raw.githubusercontent.com/p4p1/vim-blog/master/assets/new-post-desc.png)
-
-![save post](https://raw.githubusercontent.com/p4p1/vim-blog/master/assets/new-post-save.png)
+![new post name](https://raw.githubusercontent.com/p4p1/vim-blog/master/assets/vim-blog.gif)
 
 ## Instalation
 Using vim [Plug](https://github.com/junegunn/vim-plug):
