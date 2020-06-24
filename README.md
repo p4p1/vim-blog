@@ -14,8 +14,12 @@ call plug#end()
 
 Add those following line to your vimrc:
 ```vim
+" Set important blog information
 let g:blog_author = "{your name}"
 let g:blog_url = "https://{yoururl}/{postpath}/"
+
+" Run the plugin on new html file
+autocmd BufNewFile *.html call Blog_update_rss_html()
 ```
 
 Add this comment to the rss feed you want to update and the index file with all
