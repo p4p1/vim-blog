@@ -1,2 +1,36 @@
 # vim-blog
-A simple vim pluggin for working on a blog
+A simple vim pluggin for working on my blog.
+![]()
+![]()
+![]()
+
+## Instalation
+Using vim [Plug](https://github.com/junegunn/vim-plug):
+```vim
+call plug#begin('~/.vim/plugged')
+Plug 'p4p1/vim-blog'
+call plug#end()
+```
+
+Add those following line to your vimrc:
+```vim
+let g:blog_author = "{your name}"
+let g:blog_url = "https://{yoururl}/{postpath}/"
+```
+
+Add this comment to the rss feed you want to update and the index file with all
+of the blog posts:
+```html
+<!-- INSERT NEW POST HERE -->
+```
+
+## Blog structure
+```
+blog_root
+├── blog
+│   ├── blog_posts.html # the blog post you are working on
+│   ├── ...
+│   └── index.html # The index file with all of your blog posts
+└── rss
+    └── blog.xml # the rss feed you want to update
+```

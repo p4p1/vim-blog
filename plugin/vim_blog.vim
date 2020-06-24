@@ -3,7 +3,7 @@
 
 
 " Main function for the plugin
-function Blog()
+function Blog_update_rss_html()
 	let l:author = g:blog_author
 	let l:blog_url = g:blog_url
 	let l:folder_name = expand("%:p:h:t")
@@ -11,7 +11,6 @@ function Blog()
 	let l:date = strftime('%a. %d %b %Y')
 
 	if folder_name != "blog"
-		echom l:description
 		return
 	endif
 
