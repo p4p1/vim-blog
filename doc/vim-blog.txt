@@ -1,0 +1,25 @@
+vim-blog.txt     For Vim. Last change: 2020 Jun 29
+
+                     VIM - vim-blog pluggin
+
+A simple vim pluggin for working on my blog. This pluggin does require a specific
+project architecture and will need you to set global variables to specify some
+important information. This pluggin will update a rss feed named blog.xml
+located in the root of the blog in the rss folder. It will also edit a index
+html file in the blog folder. This pluggin will search for this query to edit
+thing. "<!-- INSERT NEW POST HERE -->"
+
+      VARIABLES               DESCRIPTION
+    g:blog_author          The name of the author of the blog
+    g:blog_url             The url of the path where the posts are located
+
+.vimrc:
+    In your .vimrc you will also want to add this line to automate the update
+    when you create a new file:
+autocmd BufNewFile *.html call Blog_update_rss_html()
+
+
+MORE INFO:
+This script works on a html and rss template that I made if you wish to edit
+this template look into the plugin folder of this pluggin and edit the vim_blog
+file.
